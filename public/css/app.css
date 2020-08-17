@@ -18033,6 +18033,10 @@ video {
           animation: bounce 1s infinite;
 }
 
+.main {
+  background: #00b592;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;

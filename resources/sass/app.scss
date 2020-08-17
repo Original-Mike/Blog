@@ -3,3 +3,9 @@
 @tailwind components;
 
 @tailwind utilities;
+
+$main: #00b592;
+
+.main {
+    background: $main;
+}
