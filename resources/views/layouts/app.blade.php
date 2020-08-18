@@ -22,7 +22,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <script src="{{ asset('js/app.js') }}"></script>
 </head>
-<body>
+<body class="bg-white">
 @include('layouts.navbar')
     @yield('content')
 {{--@include('layouts.footer')--}}
