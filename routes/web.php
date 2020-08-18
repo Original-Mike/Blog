@@ -17,9 +17,11 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('/', 'HomeController@index');
+
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@home')->name('home');
 
 Route::get('{slug}', ['uses' => 'PostController@show', 'as' => 'post.show']);
 
