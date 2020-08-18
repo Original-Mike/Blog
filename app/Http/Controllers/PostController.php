@@ -15,7 +15,11 @@ class PostController extends Controller
 
     public function store(StorePostRequest $request, Post $post)
     {
-        dd($request->all());
+        if (!$request->isValid()) {
+            return redirect()->back()->with('error');
+        }
+
+        return redirect()->back()->with('notification', ['type' => 'success', 'message' => "Succesvol toegevoegd"]);
     }
 
 }
