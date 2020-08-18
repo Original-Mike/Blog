@@ -5,39 +5,26 @@
     <div class="container mx-auto flex flex-wrap py-6">
 
         <!-- Posts Section -->
-        <section class="w-full md:w-2/3 flex flex-col items-center px-3">
+        <div class="w-3/4 flex flex-col items-center px-3 mx-auto">
 
             <article class="flex flex-col shadow my-4">
                 <!-- Article Image -->
-                <a href="#" class="hover:opacity-75">
-                    <img src="https://www.audi.nl/content/dam/nemo/models/a5/rs-5-sportback/my-2020/1920x1080-gallery/1920x1080-5104_3-4-Front.jpg?downsize=1920px:*">
+                <a href="#">
+                    <img src="https://www.audi.nl/content/dam/nemo/models/a5/rs-5-sportback/my-2020/1920x1080-gallery/1920x1080-5104_3-4-Front.jpg?downsize=1920px:*" alt="Audi RS-5 Sportback 2020">
                 </a>
                 <div class="bg-white flex flex-col justify-start p-6">
-                    <a href="#" class="text-3xl font-bold hover:text-gray-700 pb-4">De Audi RS 5 Sportback 2020</a>
-                    <p href="#" class="text-sm pb-3">
+                    <p class="text-3xl font-bold pb-4">De Audi RS 5 Sportback 2020</p>
+                    <p class="text-sm pb-3">
                         Door <a href="{{ url('https://www.original-mike.com/over') }}" class="font-semibold hover:text-gray-800">Mike Rahawarin</a>, 04-05-2020
                     </p>
-                    <a href="#" class="pb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis porta dui. Ut eu iaculis massa. Sed ornare ligula lacus, quis iaculis dui porta volutpat. In sit amet posuere magna..</a>
-                    <a href="#" class="uppercase text-gray-800 hover:text-black">Verder lezen <i class="far fa-long-arrow-alt-right"></i></a>
+                    <p class="pb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis porta dui. Ut eu iaculis massa. Sed ornare ligula lacus, quis iaculis dui porta volutpat. In sit amet posuere magna..</p>
+                    <div class="float-right">
+                        <a href="#" class="uppercase text-gray-800 hover:text-black float-right">Verder lezen <i class="far fa-long-arrow-alt-right"></i></a>
+                    </div>
                 </div>
             </article>
 
-            <article class="flex flex-col shadow my-4">
-                <!-- Article Image -->
-                <a href="#" class="hover:opacity-75">
-{{--                    <img src="https://source.unsplash.com/collection/1346951/1000x500?sig=2">--}}
-                </a>
-                <div class="bg-white flex flex-col justify-start p-6">
-                    <a href="#" class="text-3xl font-bold hover:text-gray-700 pb-4">Lorem Ipsum Dolor Sit Amet Dolor Sit Amet</a>
-                    <p href="#" class="text-sm pb-3">
-                        By <a href="#" class="font-semibold hover:text-gray-800">David Grzyb</a>, Published on January 12th, 2020
-                    </p>
-                    <a href="#" class="pb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis porta dui. Ut eu iaculis massa. Sed ornare ligula lacus, quis iaculis dui porta volutpat. In sit amet posuere magna..</a>
-                    <a href="#" class="uppercase text-gray-800 hover:text-black">Continue Reading <i class="fal fa-long-arrow-right"></i></a>
-                </div>
-            </article>
-
-        </section>
+        </div>
 
         <!-- Sidebar Section -->
 {{--        <aside class="w-full md:w-1/3 flex flex-col items-center px-3">--}}
