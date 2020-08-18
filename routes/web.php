@@ -26,6 +26,7 @@ Route::get('{slug}', ['uses' => 'PostController@show', 'as' => 'post.show']);
 Route::group(['middleware' => 'auth'], function () {
     Route::group(['prefix' => 'posts', 'as' => 'post.'], function (){
         Route::get('create', ['uses' => 'PostController@create', 'as' => 'create']);
+        Route::post('store', ['uses' => 'PostController@store', 'as' => 'store']);
     });
 });
 
