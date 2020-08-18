@@ -1,5 +1,5 @@
 <div class="bg-teal-600">
-    <div class="container mx-auto flex justify-between items-center py-2">
+    <div class="flex justify-between items-center px-4 py-2">
         <div>
             <img src="https://original-mike.com/images/logo.png" alt="Logo">
         </div>
