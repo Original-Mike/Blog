@@ -22,6 +22,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a8b644e2d8.js" crossorigin="anonymous"></script>
     <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/ckeditor.js') }}"></script>
 </head>
 <body class="bg-white">
 @include('layouts.navbar')
