@@ -57,7 +57,7 @@ class StorePostRequest extends FormRequest
             'slug' => Str::slug($this->name),
             'description' => $this->description,
             'body' => $this->body,
-            'thumbnail' => $this->thumbnail,
+            'thumbnail' => $filenameToStore,
             'user_id' => Auth::user()->id
         ];
 
