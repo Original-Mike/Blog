@@ -21,9 +21,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::group(['prefix' => 'posts', 'as' => 'post.'], function () {
-    Route::get('{slug}', ['uses' => 'PostController@show', 'as' => 'post.show']);
-});
+Route::get('{slug}', ['uses' => 'PostController@show', 'as' => 'post.show']);
+
 Route::group(['middleware' => 'auth'], function () {
     Route::group(['prefix' => 'posts', 'as' => 'post.'], function (){
         Route::get('create', ['uses' => 'PostController@create', 'as' => 'create']);
