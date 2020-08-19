@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Post;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -25,12 +24,6 @@ class HomeController extends Controller
     public function home()
     {
         return view('home');
-    }
-
-    public function index()
-    {
-        $posts = Post::orderBy('created_at', 'DESC')->get();
-        return view('index', compact('posts'));
     }
 
 }
