@@ -22,4 +22,15 @@ class PostController extends Controller
         return redirect()->back()->with('notification', ['type' => 'success', 'message' => "Succesvol toegevoegd"]);
     }
 
+    public function show($slug)
+    {
+        $post = Post::where('slug', '=', $slug)->first();
+
+        if(!is_null($post)) {
+            return view('post.show', compact('post'));
+        }
+        else
+            abort(404);
+    }
+
 }
