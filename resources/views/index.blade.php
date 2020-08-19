@@ -6,7 +6,7 @@
         @foreach($posts as $post)
             <div class="w-3/4 flex flex-col items-center px-3 mx-auto">
                 <div class="flex flex-col shadow my-4">
-                    <img src="/storage/thumbnails/{{ $post->thumbnail }}" alt="Audi RS-5 Sportback 2020">
+                    <img src="{{ url('/storage/thumbnails') }}/{{ $post->thumbnail }}" alt="Audi RS-5 Sportback 2020">
                     <div class="bg-white flex flex-col justify-start p-6">
                         <p class="text-3xl font-bold pb-4">{{ $post->name }}</p>
                         <p class="text-sm pb-3">
