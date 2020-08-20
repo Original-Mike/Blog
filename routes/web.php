@@ -15,7 +15,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'IndexController@index')->name('index');
 
-Auth::routes();
+Route::get('om-admin', 'Auth\LoginController@showLoginForm')->name('login');
+Route::post('login', 'Auth\LoginController@login');
+Route::post('logout', 'Auth\LoginController@logout')->name('logout');
 
 Route::get('/home', 'HomeController@home')->name('home');
 Route::get('/{slug}', ['uses' => 'PostController@show', 'as' => 'post.show']);
