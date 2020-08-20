@@ -8,6 +8,9 @@
             <a class="pl-6 hover:text-gray-400" href="{{ url('https://www.instagram.com/mikerahawarin') }}" target="_blank">
                 <i class="fab fa-instagram"></i>
             </a>
+            <a class="pl-6 hover:text-gray-400" href="{{ url('https://github.com/Original-Mike') }}" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
             <a class="pl-6 hover:text-gray-400" href="{{ url('https://twitter.com/MikeRahawarin') }}" target="_blank">
                 <i class="fab fa-twitter"></i>
             </a>
