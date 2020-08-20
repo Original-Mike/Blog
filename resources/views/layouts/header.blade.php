@@ -1,5 +1,5 @@
 <header class="w-full container mx-auto">
-    <div class="flex flex-col items-center py-12">
+    <div class="flex flex-col items-center flex flex-col items-center pb-12 pt-32">
         <a class="font-bold text-gray-900 uppercase text-5xl" href="{{ url('https://www.original-mike.com') }}">
             ORIGINAL-MIKE
         </a>
