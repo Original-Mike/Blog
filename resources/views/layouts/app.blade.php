@@ -16,11 +16,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Blog | Original-Mike @yield('name')</title>
+    <title>{{ env('PROJECT_NAME') }} @yield('name')</title>
 
     <link href="#" rel="icon">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a8b644e2d8.js" crossorigin="anonymous"></script>
+    <script src="{{ url('https://kit.fontawesome.com/a8b644e2d8.js') }}" crossorigin="anonymous"></script>
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/ckeditor.js') }}"></script>
 </head>
